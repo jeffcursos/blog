@@ -17,6 +17,8 @@
     </article>
     {% if not loop.last %}
         <hr>
-    {% endif %}    
+    {% endif %}  
+{% else %}  
+    <p class="no-posts"> Ops... There are no posts to display!</p>
 {% endfor %}
 {%endblock %}
