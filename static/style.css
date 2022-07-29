@@ -5,6 +5,7 @@ html{
 }
 body{
     max-width: 960px;
+    max-height:280px;
     margin: 0 auto;
     background: white;
 }
@@ -34,7 +35,6 @@ hr{
     font-style: italic;
     color: gray;
 }
-
 .content form{
     margin: 1em auto;
     display: flex;
@@ -46,5 +46,6 @@ hr{
     margin-bottom: 0.5em;
 }
 .content input{
-    margin-bottom: 1em;
+    margin-bottom: 1em; 
 }
+
