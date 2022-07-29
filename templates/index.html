@@ -3,13 +3,14 @@
 {% block title%} Página Inicial {%endblock%}
 
 {%block content %}
+
 {% for post in posts %}
     <article class="post">
         <header>
             <div>
                 <h1>{{ post.title }}</h1>
                 <div class="about">
-                    by {{ post.author }} on {{ post.created.strftime('%d/%m/%Y') }}
+                    by {{ post.author.username }} on {{ post.created.strftime('%d/%m/%Y') }}
                 </div>
             </div>
         </header>
@@ -20,5 +21,6 @@
     {% endif %}  
 {% else %}  
     <p class="no-posts"> Ops... There are no posts to display!</p>
+    
 {% endfor %}
 {%endblock %}

@@ -8,7 +8,6 @@ body{
     margin: 0 auto;
     background: white;
 }
-
 h1{
     font-family: serif;
     color: #377ba8;
@@ -31,9 +30,21 @@ hr{
 .post .body{
     white-space: pre-line;
 }
-
 .no-posts{
-    color: gray;
     font-style: italic;
+    color: gray;
+}
 
+.content form{
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+.content label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.content input{
+    margin-bottom: 1em;
 }
