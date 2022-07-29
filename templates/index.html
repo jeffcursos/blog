@@ -10,7 +10,7 @@
             <div>
                 <h1>{{ post.title }}</h1>
                 <div class="about">
-                    by {{ post.author.username }} on {{ post.created.strftime('%d/%m/%Y') }}
+                    Postado por {{ post.author.username }} em {{ post.created.strftime('%d/%m/%Y as %H:%M:%S') }} <!--Introduz dados da postagem-->
                 </div>
             </div>
         </header>
