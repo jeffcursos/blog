@@ -46,7 +46,7 @@ db.create_all()
 @app.route("/")
 def index():
     # Busca no Banco os posts
-    posts = Post.query.all()
+    posts = Post.query.order_by(Post.created).all() #posts = Post.query.order_by(-Post.created).all() nao funcionou
     return render_template("index.html", posts=posts)
 
 #inserir 2 textos no blog
